@@ -7,11 +7,14 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 setup(
     name='django-event-logging',
     version='0.1.0',
-    url='https://git.teko.vn/minh.gdd/django-event-logging',
+    url='https://github.com/ducminhgd/django-event-logging',
     license='',
     packages=find_packages(),
-    author='minhgdd',
-    author_email='minh.gdd@teko.vn',
+    author='Giã Dương Đức Minh',
+    author_email='giaduongducminh@gmail.com',
+    install_requires=[
+        'uuid==1.30',
+    ],
     description='Insert event into database for logging purpose',
     classifiers=[
         'Environment :: Web Environment',
