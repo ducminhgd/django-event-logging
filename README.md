@@ -2,7 +2,7 @@
 
 Log events using database
 
-*Current version:* 0.1.0 (dev)
+*Current version:* 0.1.1 (dev)
 
 ## Installation
 
