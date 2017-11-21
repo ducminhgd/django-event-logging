@@ -6,7 +6,7 @@ Log events using database
 
 ## Installation
 
-`pip install git+git://github.com/ducminhgd/django-event-logging.git`
+Run `pip install django-event-logging`
 
 ## Setting up
 
