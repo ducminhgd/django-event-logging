@@ -1,17 +1,18 @@
 import os
 from setuptools import find_packages, setup
+from event_logging import __version__, __author__, __email__
 
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-event-logging',
-    version='0.1.0',
+    version=__version__,
     url='https://github.com/ducminhgd/django-event-logging',
     license='',
     packages=find_packages(),
-    author='Giã Dương Đức Minh',
-    author_email='giaduongducminh@gmail.com',
+    author=__author__,
+    author_email=__email__,
     install_requires=[],
     description='Insert event into database for logging purpose',
     classifiers=[
