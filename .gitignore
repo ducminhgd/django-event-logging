@@ -99,5 +99,6 @@ ENV/
 
 # mypy
 .mypy_cache/
-/.idea
-/main.py
+.vscode
+.idea
+main.py

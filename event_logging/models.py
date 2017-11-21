@@ -1,9 +1,9 @@
-import uuid
 import logging
 from django.db import models
+from django.utils.translation import gettext as _
 
 
-class EventLogging(models.Model):
+class EventLoggingModel(models.Model):
     LOG_LEVELS = (
         (logging.NOTSET, _('NotSet')),
         (logging.INFO, _('Info')),
@@ -13,7 +13,7 @@ class EventLogging(models.Model):
         (logging.FATAL, _('Fatal')),
     )
 
-    uuid = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    id = models.BigAutoField(primary_key=True)
     level = models.PositiveSmallIntegerField(choices=LOG_LEVELS, default=logging.INFO, db_index=True)
     actor = models.CharField(max_length=30, null=False)
     action = models.PositiveSmallIntegerField(null=True)

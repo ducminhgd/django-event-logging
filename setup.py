@@ -12,9 +12,7 @@ setup(
     packages=find_packages(),
     author='Giã Dương Đức Minh',
     author_email='giaduongducminh@gmail.com',
-    install_requires=[
-        'uuid==1.30',
-    ],
+    install_requires=[],
     description='Insert event into database for logging purpose',
     classifiers=[
         'Environment :: Web Environment',
